@@ -33,9 +33,51 @@ O Sistema de Gestão de Estoque EletroTech foi desenvolvido para gerenciar de fo
 * **Controle de Movimentação de Estoque**: Registra todas as movimentações de entrada e saída do estoque, fornecendo dados em tempo real sobre a disponibilidade de produtos, custos associados e datas de validade, o que é crucial para manter a integridade do inventário e evitar desperdícios.
 
 * **Associação Fornecedor-Produto**: Uma tabela de associação que conecta produtos aos seus respectivos fornecedores, permitindo à empresa identificar rapidamente de onde os produtos estão vindo e para onde estão indo, o que é essencial para a gestão da cadeia de suprimentos e para negociações de compra.
-  
-![](https://github.com/leoarcabold/Sistema_de_Gestao_de_Estoque_EletroTech/blob/main/img/database.jpeg)
 
+
+<img src=https://github.com/leoarcabold/Sistema_de_Gestao_de_Estoque_EletroTech/blob/main/img/database.jpg width=100%>
+
+O projeto descrito é um sistema de banco de dados relacional projetado para gerenciar as operações de inventário e as relações com fornecedores de uma empresa. A seguir, detalho a estrutura do banco de dados e a finalidade de cada uma das tabelas propostas:
+
+```
+-- Criação da tabela de Fornecedores
+CREATE TABLE FORNECEDOR (
+    Id INT PRIMARY KEY,
+    CNPJ_CPF VARCHAR(18),
+    Razao_Social VARCHAR(50),
+    Nome VARCHAR(50)
+);
+
+-- Criação da tabela de Produtos
+CREATE TABLE PRODUTO (
+    Id INT PRIMARY KEY,
+    Nome VARCHAR(30),
+    Descricao VARCHAR(100),
+    Categoria VARCHAR(50)
+);
+
+-- Criação da tabela de Movimentação de Estoque
+CREATE TABLE MOVIMENTACAO_ESTOQUE (
+    Id INT PRIMARY KEY,
+    Produto_Id INT,
+    Data DATE,
+    Quantidade REAL,
+    Tipo_Movimentacao VARCHAR(30),
+    Custo REAL,
+    Lote INT,
+    Validade DATE,
+    FOREIGN KEY (Produto_Id) REFERENCES PRODUTO(Id)
+);
+
+-- Criação da tabela de associação entre Fornecedores e Produtos
+CREATE TABLE FORNECEDOR_PRODUTO (
+    Id INT PRIMARY KEY,
+    Produto_Id INT,
+    Fornecedor_Id INT,
+    FOREIGN KEY (Produto_Id) REFERENCES PRODUTO(Id),
+    FOREIGN KEY (Fornecedor_Id) REFERENCES FORNECEDOR(Id)
+);
+```
 ### Configuração do Projeto
 
 Instruções sobre como configurar e iniciar o projeto. Esta seção é dividida em
