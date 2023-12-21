@@ -5,12 +5,17 @@ O principal objetivo deste projeto é criar um sistema que permita à EletroTech
 
 ### Índice
 
-Uma seção de índice que lista e fornece links rápidos para as diferentes seções
-do README.
-Sobre o Projeto
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Características](#características)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura do Banco de Dados](#estrutura-do-banco-de-dados)
+- [Configuração do Projeto](#configuração-do-projeto)
+- [Uso](#uso)
+- [Contribuições](#contribuições)
+- [Licença](#licença)
+- [Contato](#contato)
 
-Uma breve descrição do projeto, explicando o que é o Sistema de Gestão de
-Estoque EletroTech e seus objetivos principais.
+
 ### Características
 
 Uma lista das principais funcionalidades do sistema, como gestão de produtos,
@@ -80,8 +85,25 @@ CREATE TABLE FORNECEDOR_PRODUTO (
 ```
 ### Configuração do Projeto
 
-Instruções sobre como configurar e iniciar o projeto. Esta seção é dividida em
-duas subseções:
+Pré-Requisitos
+Antes de iniciar a configuração do projeto, certifique-se de que as seguintes ferramentas e tecnologias estejam instaladas e configuradas em seu ambiente:
+
+* **Java JDK**: O projeto requer Java Development Kit (JDK) versão 17 ou superior. Pode ser baixado e instalado a partir do site oficial do Oracle Java.
+* **SQLite**: O projeto utiliza SQLite como sistema de gerenciamento de banco de dados. Baixe e instale o SQLite a partir do site oficial do SQLite.
+* **IDE Apropriada**: Recomendamos o uso de uma IDE como IntelliJ IDEA ou Eclipse para facilitar o desenvolvimento e a execução do projeto.
+
+* **Instalação e Execução**
+
+Siga estes passos para configurar e iniciar o projeto:
+* **Clonar o Repositório**: Use o seguinte comando para clonar o repositório do projeto:
+  
+
+* > git clone https://github.com/leoarcabold/Sistema_de_Gestao_de_Estoque_EletroTech
+
+
+* **Configurar o Ambiente**: Abra o projeto clonado na sua IDE de escolha e certifique-se de que o JDK está corretamente configurado no projeto.
+* **Executar o Projeto**: Execute a classe principal do projeto ou o arquivo JAR gerado para iniciar a aplicação.
+
 
 **Pré-Requisitos**: Lista de tudo que é necessário antes de começar a
 instalação, como Java JDK, SQLitee uma IDE apropriada.
@@ -91,17 +113,23 @@ repositório, configurar o ambiente e executar o projeto.
 
 ### Uso
 
-Uma explicação de como usar o sistema uma vez que esteja em funcionamento,
-descrevendo as operações de CRUD e outras funcionalidades.
+Após iniciar o sistema, você pode realizar as seguintes operações:
+
+* **CRUD (Create, Read, Update, Delete)**: O sistema permite criar, visualizar, atualizar e deletar registros no banco de dados.
+* **Outras Funcionalidades**: Descreva aqui outras funcionalidades específicas do sistema, como consultas específicas, relatórios gerados, etc.
 ### Contribuições
 
-Diretrizes sobre como contribuir para o projeto, incluindo como fazer fork, criar
-branches, fazer commits, e abrir Pull Requests.
+Contribuições são sempre bem-vindas! Para contribuir com o projeto:
+
+* **Fazer Fork**: Crie um fork do projeto no GitHub.
+* **Criar Branch**: Crie uma nova branch para suas modificações (git checkout -b feature/NovaFuncionalidade).
+* **Fazer Commits**: Faça commits de suas alterações (git commit -am 'Adicionando uma nova funcionalidade').
+* **Abrir Pull Requests**: Envie um pull request para o repositório original para revisão e possível integração.
 ### Licença
 
-Informações sobre a licença sob a qual o projeto é distribuído, geralmente a
-licença MIT para projetos de código aberto.
+Este projeto é distribuído sob a Licença MIT. Veja o arquivo LICENSE no repositório do projeto para mais detalhes.
 ### Contato
 
-Detalhes de contato do autor ou mantenedor do projeto, incluindo nome, e-mail,
-e link para o repositório do projeto no GitHub.
+**Autor/Mantenedor**: Leandro Soares
+
+**GitHub**: https://github.com/leoarcabold/Sistema_de_Gestao_de_Estoque_EletroTech
