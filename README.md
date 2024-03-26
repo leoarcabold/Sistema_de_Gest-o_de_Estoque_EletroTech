@@ -44,7 +44,7 @@ O Sistema de Gestão de Estoque EletroTech foi desenvolvido para gerenciar de fo
 
 O projeto descrito é um sistema de banco de dados relacional projetado para gerenciar as operações de inventário e as relações com fornecedores de uma empresa. A seguir, detalho a estrutura do banco de dados e a finalidade de cada uma das tabelas propostas:
 
-```
+```sql
 -- Criação da tabela de Fornecedores
 CREATE TABLE FORNECEDOR (
     Id INT PRIMARY KEY,
